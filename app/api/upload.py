@@ -14,7 +14,7 @@ from app.config import settings
 from app.database import get_db
 from app.models.image import Image
 from app.schemas.image import ImageResponse
-from app.services.ai_classifier import classify_image
+from app.services.ai_classifier import classify_image_with_retries
 
 router = APIRouter(prefix="/api", tags=["upload"])
 
@@ -118,7 +118,7 @@ def upload_image(
     disk_path = settings.upload_dir / stored_name
     disk_path.write_bytes(raw_bytes)
 
-    classification = classify_image(str(disk_path.resolve()))
+    classification = classify_image_with_retries(str(disk_path.resolve()))
 
     uploader = (uploaded_by or "").strip() or "anonymous"
 

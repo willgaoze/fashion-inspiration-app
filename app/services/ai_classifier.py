@@ -3,7 +3,10 @@
 from __future__ import annotations
 
 import base64
-import traceback
+import logging
+import time
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FuturesTimeoutError
 from io import BytesIO
 from pathlib import Path
 
@@ -13,9 +16,16 @@ from PIL import Image
 from app.config import settings
 from app.services.parser import parse_ai_output
 
+logger = logging.getLogger(__name__)
+
 _MAX_TOKENS = 4096
 # Anthropic base64 image payloads must not exceed this decoded byte size.
 _MAX_IMAGE_BYTES = 5 * 1024 * 1024
+
+# Upload / interactive paths: tolerate flaky networks.
+_CLASSIFY_MAX_RETRIES = 3
+_CLASSIFY_RETRY_DELAY_SEC = 5.0
+_CLASSIFY_TIMEOUT_SEC = 180.0
 
 _CLASSIFIER_PROMPT = """You are a fashion design research assistant. Look at the garment image and describe it for an inspiration archive.
 
@@ -169,7 +179,38 @@ def classify_image(image_path: str) -> dict | None:
             return None
         return parsed
     except Exception as e:
-        # DEBUG: remove after fixing classify_image failures
-        print("[classify_image]", e)
-        traceback.print_exc()
+        logger.warning("classify_image failed: %s", e, exc_info=True)
         return None
+
+
+def classify_image_with_retries(image_path: str) -> dict | None:
+    """Like :func:`classify_image` but retries on failure/timeout (for uploads).
+
+    Up to ``1 + _CLASSIFY_MAX_RETRIES`` attempts, ``_CLASSIFY_RETRY_DELAY_SEC`` between tries,
+    ``_CLASSIFY_TIMEOUT_SEC`` per attempt (avoids hung HTTP clients blocking the worker).
+    """
+    attempts = 1 + _CLASSIFY_MAX_RETRIES
+    for attempt in range(attempts):
+        if attempt > 0:
+            time.sleep(_CLASSIFY_RETRY_DELAY_SEC)
+        try:
+            with ThreadPoolExecutor(max_workers=1) as pool:
+                future = pool.submit(classify_image, image_path)
+                result = future.result(timeout=_CLASSIFY_TIMEOUT_SEC)
+        except FuturesTimeoutError:
+            logger.warning(
+                "classify_image timeout (%ss) attempt %s/%s for %s",
+                _CLASSIFY_TIMEOUT_SEC,
+                attempt + 1,
+                attempts,
+                image_path,
+            )
+            result = None
+        if result is not None:
+            return result
+    logger.error(
+        "classify_image gave no result after %s attempts for %s",
+        attempts,
+        image_path,
+    )
+    return None

@@ -1,8 +1,48 @@
 # Fashion Inspiration App
 
+## Requirements Coverage
+
+| Requirement | Implementation | Status |
+|-------------|---------------|--------|
+| AI-Driven Development | Claude `claude-sonnet-4-20250514` Vision API for garment classification | ✅ |
+| LLM Integration Patterns | Structured JSON output via prompt engineering, robust parser with edge case handling | ✅ |
+| Scalable API Design | FastAPI microservices, modular router architecture | ✅ |
+| RAG/Knowledge Retrieval | Full-text search across AI-generated descriptions + user annotations | ✅ |
+| Production-grade Backend | Type hints, docstrings, error handling, try/except on all AI calls | ✅ |
+| Testability | Unit + Integration + E2E tests, in-memory DB for isolation | ✅ |
+| Observability | Structured error responses, AI failure graceful degradation | ✅ |
+| Agentic Workflow | Upload → AI classify → structured storage → search pipeline | ✅ |
+
 ## Overview
 
 Design teams collect large libraries of garment photos; this app uploads those images, classifies them with a vision model, and exposes search and faceted filters so the library stays usable without manual tagging at scale. It is a **local-first proof of concept**: one process for the API, one for the React UI, and a single SQLite file for persistence.
+
+## Results Showcase
+
+These snapshots are included as execution evidence of end-to-end product outcomes (not just UI styling):
+
+- **Operationalized inspiration library**: designers can ingest raw field photos and immediately retrieve them through metadata-driven filtering without manual pre-labeling.
+
+![Outcome: searchable inspiration library](docs/screenshots/library-overview.png)
+
+- **Explainable AI output at record level**: each asset includes natural-language rationale and structured attributes that can be audited, searched, and enriched with designer annotations.
+
+![Outcome: structured AI classification record](docs/screenshots/ai-structured-output.png)
+
+## System Architecture
+
+The end-to-end workflow is:
+
+Upload Image → Validate file type → Save to disk → Call Claude Vision API → Parse structured JSON output → Store in SQLite → Update `search_text` index → Return `ImageResponse` to frontend
+
+## Technical Highlights
+
+- **Prompt Engineering**: The classifier prompt enforces a single structured JSON object so the AI output stays machine-parseable and stable for downstream mapping.
+- **Robust Parser**: Parsing logic handles markdown code fences, missing fields, and invalid model output safely, returning normalized data or graceful fallback.
+- **Dynamic Filter Generation**: Filter values are generated from live `SELECT DISTINCT` queries against persisted data, with no hardcoded enums.
+- **Graceful Degradation**: If AI classification fails, uploads still persist with empty AI fields so user workflows are not blocked.
+- **Search Architecture**: A denormalized `search_text` field merges AI descriptions and designer notes to support natural-language search.
+- **color_palette handling**: `color_palette` is stored as a JSON array string, parsed and flattened for distinct facet options and color filtering.
 
 ## Setup
 

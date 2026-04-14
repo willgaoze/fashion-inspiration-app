@@ -17,7 +17,7 @@ def _tiny_jpeg_bytes() -> bytes:
     return buf.getvalue()
 
 
-@patch("app.api.upload.classify_image")
+@patch("app.api.upload.classify_image_with_retries")
 def test_upload_persists_and_search_finds_image(mock_classify, client, engine, tmp_path, monkeypatch):
     mock_classify.return_value = {
         "description": "Tiny test garment",
