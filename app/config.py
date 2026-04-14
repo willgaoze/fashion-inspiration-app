@@ -7,9 +7,10 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv()
-
 BASE_DIR: Path = Path(__file__).resolve().parent.parent
+
+# Load ``.env`` from the project root (not ``.env.example``); works regardless of CWD.
+load_dotenv(BASE_DIR / ".env")
 
 
 def _resolve_upload_dir(raw: str) -> Path:
@@ -25,6 +26,10 @@ class Settings:
 
     def __init__(self) -> None:
         self.anthropic_api_key: str = os.getenv("ANTHROPIC_API_KEY", "")
+        self.anthropic_model: str = os.getenv(
+            "ANTHROPIC_MODEL",
+            "claude-sonnet-4-20250514",
+        )
         self.upload_dir: Path = _resolve_upload_dir(
             os.getenv("UPLOAD_DIR", "app/static"),
         )
