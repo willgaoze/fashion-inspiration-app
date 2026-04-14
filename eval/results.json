@@ -1,0 +1,588 @@
+{
+  "summary_lines": [
+    "garment_type: 65%",
+    "style: n/a",
+    "material: n/a",
+    "occasion: n/a",
+    "overall: 65%"
+  ],
+  "metrics_percent": {
+    "garment_type": 65,
+    "style": null,
+    "material": null,
+    "occasion": null
+  },
+  "overall_percent": 65,
+  "counts": {
+    "garment_type": {
+      "correct": 13,
+      "total": 20
+    },
+    "style": {
+      "correct": 0,
+      "total": 0
+    },
+    "material": {
+      "correct": 0,
+      "total": 0
+    },
+    "occasion": {
+      "correct": 0,
+      "total": 0
+    }
+  },
+  "items": [
+    {
+      "filename": "pexels-arina-krasnikova-5418890.jpg",
+      "prediction": {
+        "description": "A curated clothing rack displaying a minimalist collection of neutral-toned garments including shirts, blazers, and outerwear in muted colorways",
+        "garment_type": "mixed collection",
+        "style": "minimalist contemporary",
+        "material": null,
+        "color_palette": [
+          "beige",
+          "light blue",
+          "white",
+          "black",
+          "tan",
+          "cream"
+        ],
+        "pattern": "solid",
+        "season": "transitional",
+        "occasion": "smart casual",
+        "consumer_profile": "modern professional seeking versatile basics",
+        "trend_notes": "neutral palette dominance with focus on wardrobe essentials and capsule dressing",
+        "location_context": "retail boutique or showroom with clean modern aesthetic"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-celeo-16097663.jpg",
+      "prediction": {
+        "description": "Oversized black hoodie with contrasting white topstitching details, featuring a relaxed fit and casual streetwear aesthetic. Worn with a white ribbed headband for a sporty-casual look.",
+        "garment_type": "hoodie",
+        "style": "oversized streetwear",
+        "material": "cotton blend",
+        "color_palette": [
+          "black",
+          "white"
+        ],
+        "pattern": "solid with contrast stitching",
+        "season": "fall/winter",
+        "occasion": "casual/streetwear",
+        "consumer_profile": "young adults seeking comfortable urban fashion",
+        "trend_notes": "oversized silhouettes with contrast topstitching details, athletic-inspired accessories",
+        "location_context": "outdoor park or suburban area"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-cottonbro-6069980.jpg",
+      "prediction": {
+        "description": "A plaid flannel shirt in yellow, black and white check pattern, worn with a black belt and styled with a black wide-brim hat for a vintage-inspired look",
+        "garment_type": "flannel shirt",
+        "style": "vintage grunge",
+        "material": "cotton flannel",
+        "color_palette": [
+          "yellow",
+          "black",
+          "white"
+        ],
+        "pattern": "plaid check",
+        "season": "fall/winter",
+        "occasion": "casual/streetwear",
+        "consumer_profile": "young alternative fashion enthusiast",
+        "trend_notes": "90s revival styling with oversized fit and grunge aesthetic",
+        "location_context": "clothing store or boutique with rack of garments visible in background"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-cottonbro-6543933.jpg",
+      "prediction": {
+        "description": "A relaxed-fit pink hoodie with kangaroo pocket paired with a flowing midi skirt featuring small polka dot pattern and side slit, styled in a casual-chic manner against a lavender backdrop",
+        "garment_type": "hoodie and skirt set",
+        "style": "casual contemporary",
+        "material": "cotton blend fleece and lightweight woven fabric",
+        "color_palette": [
+          "pink",
+          "lavender",
+          "coral"
+        ],
+        "pattern": "polka dots on skirt",
+        "season": "spring/summer",
+        "occasion": "casual daywear",
+        "consumer_profile": "young contemporary woman seeking comfort-forward fashion",
+        "trend_notes": "monochromatic pink styling, athleisure meets feminine elements, oversized hoodie silhouette",
+        "location_context": "studio photography setting"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-cottonbro-7130035.jpg",
+      "prediction": {
+        "description": "Casual striped long-sleeve top worn in a relaxed indoor setting, featuring horizontal black and white stripes with a comfortable, loose fit",
+        "garment_type": "long-sleeve top",
+        "style": "casual striped shirt",
+        "material": null,
+        "color_palette": [
+          "black",
+          "white"
+        ],
+        "pattern": "horizontal stripes",
+        "season": null,
+        "occasion": "casual/loungewear",
+        "consumer_profile": "young adult seeking comfortable everyday wear",
+        "trend_notes": "classic striped pattern maintains timeless appeal for casual styling",
+        "location_context": "residential interior with modern decor and purple lighting"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-filirovska-7138971.jpg",
+      "prediction": {
+        "description": "A curated collection of dress shirts and blouses hanging on a retail rack, featuring a mix of classic business and casual styles in soft, professional color palette with various textures and patterns",
+        "garment_type": "shirts and blouses",
+        "style": "business casual to formal",
+        "material": "cotton and cotton blends",
+        "color_palette": [
+          "light blue",
+          "pink",
+          "white",
+          "red",
+          "lavender"
+        ],
+        "pattern": "solid colors with some subtle textures",
+        "season": "all-season",
+        "occasion": "professional and business casual",
+        "consumer_profile": "working professionals seeking versatile wardrobe staples",
+        "trend_notes": "Classic shirting with emphasis on soft, approachable colors and professional versatility",
+        "location_context": "retail clothing store or boutique display"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-fotios-photos-12048378.jpg",
+      "prediction": {
+        "description": "A curated closet rack displaying a diverse collection of women's garments including a red blazer, leopard print dress, orange tiered dress, white blouses, and polka dot pieces, showcasing a mix of classic and contemporary styles",
+        "garment_type": "mixed collection",
+        "style": "eclectic mix",
+        "material": null,
+        "color_palette": [
+          "red",
+          "orange",
+          "white",
+          "black",
+          "brown",
+          "leopard print"
+        ],
+        "pattern": "mixed patterns including leopard print, polka dots, and florals",
+        "season": "transitional",
+        "occasion": "versatile wardrobe pieces",
+        "consumer_profile": "fashion-conscious woman seeking variety",
+        "trend_notes": "Combines timeless pieces like leopard print and polka dots with bold colors and layering options",
+        "location_context": "personal closet or boutique display"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-musaabzayona-18999070.jpg",
+      "prediction": {
+        "description": "A tailored coral-pink blazer with a structured silhouette featuring notched lapels, front button closure, and fitted waist. The jacket appears to have a textured weave and is styled over a white top, displayed on a professional dress form.",
+        "garment_type": "blazer",
+        "style": "tailored",
+        "material": "textured woven fabric",
+        "color_palette": [
+          "coral",
+          "pink",
+          "salmon"
+        ],
+        "pattern": "solid",
+        "season": "spring/summer",
+        "occasion": "business casual",
+        "consumer_profile": "professional women seeking polished workwear",
+        "trend_notes": "Bright coral color reflects the trend toward optimistic, energizing hues in professional wear",
+        "location_context": "upscale retail boutique or showroom with modern interior and greenery"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-photo-ms-629172420-17438722.jpg",
+      "prediction": {
+        "description": "A relaxed oversized button-up shirt featuring an all-over botanical leaf print in pink and white, styled casually with light blue jeans and coordinating pink accessories including a headscarf and small handbag",
+        "garment_type": "oversized shirt",
+        "style": "casual bohemian",
+        "material": "lightweight woven fabric",
+        "color_palette": [
+          "white",
+          "pink",
+          "light blue"
+        ],
+        "pattern": "botanical leaf print",
+        "season": "spring/summer",
+        "occasion": "casual daywear",
+        "consumer_profile": "young contemporary women seeking comfortable yet stylish everyday wear",
+        "trend_notes": "Oversized silhouettes, botanical prints, and tonal color coordination reflect current relaxed fashion trends with feminine touches",
+        "location_context": "outdoor park or recreational area with trees and benches"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-planeteelevene-2517865.jpg",
+      "prediction": {
+        "description": "A collection of casual garments hanging on display, featuring a white top with black polka dots, a vibrant patterned piece with paisley and floral motifs in blues and yellows, and a solid burgundy red garment, showcasing a mix of classic and bohemian aesthetics",
+        "garment_type": "mixed casual wear",
+        "style": "eclectic casual mix",
+        "material": "cotton blend",
+        "color_palette": [
+          "white",
+          "black",
+          "navy blue",
+          "yellow",
+          "burgundy",
+          "red"
+        ],
+        "pattern": "polka dots and paisley floral",
+        "season": "spring/summer",
+        "occasion": "casual everyday wear",
+        "consumer_profile": "young to middle-aged individuals seeking versatile casual pieces",
+        "trend_notes": "Mix-and-match approach combining classic polka dots with bohemian paisley patterns and solid statement colors",
+        "location_context": "retail display or market setting"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-robcas-32213168.jpg",
+      "prediction": {
+        "description": "A collection of casual garments hanging on a clothing rack outdoors, featuring a prominent rust-colored ribbed dress or long cardigan with draped silhouette in the foreground, alongside colorful tops in magenta, royal blue, and white",
+        "garment_type": "dress/cardigan",
+        "style": "casual bohemian",
+        "material": "ribbed knit",
+        "color_palette": [
+          "rust",
+          "terracotta",
+          "magenta",
+          "royal blue",
+          "white"
+        ],
+        "pattern": "ribbed texture",
+        "season": "spring/summer",
+        "occasion": "casual everyday wear",
+        "consumer_profile": "bohemian lifestyle, relaxed fashion preferences",
+        "trend_notes": "oversized draped silhouettes, earthy tones mixed with bright accents, textured knits",
+        "location_context": "outdoor clothing display, possibly street market or vintage sale"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8387116.jpg",
+      "prediction": {
+        "description": "A midi-length dress featuring a delicate floral print in blue and white tones with long sleeves and a relaxed, flowing silhouette",
+        "garment_type": "midi dress",
+        "style": "casual feminine",
+        "material": "lightweight woven fabric",
+        "color_palette": [
+          "blue",
+          "white",
+          "light blue"
+        ],
+        "pattern": "small floral print",
+        "season": "spring/summer",
+        "occasion": "casual daywear",
+        "consumer_profile": "young contemporary women",
+        "trend_notes": "prairie-inspired florals, romantic femininity, relaxed midi lengths",
+        "location_context": "retail clothing store"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8387120.jpg",
+      "prediction": {
+        "description": "A light blue floral printed blazer or jacket being tried on in what appears to be a clothing boutique, featuring a classic tailored silhouette with notched lapels and a delicate small-scale floral pattern throughout the fabric.",
+        "garment_type": "blazer",
+        "style": "classic tailored",
+        "material": null,
+        "color_palette": [
+          "light blue",
+          "white",
+          "yellow"
+        ],
+        "pattern": "small floral print",
+        "season": "spring/summer",
+        "occasion": "smart casual",
+        "consumer_profile": "young professional woman",
+        "trend_notes": "Feminine florals on structured pieces, mixing prints with casual denim",
+        "location_context": "contemporary fashion boutique with clean white interior and clothing racks"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8387817 (1).jpg",
+      "prediction": {
+        "description": "A vibrant yellow blazer with structured shoulders and classic tailoring, featuring button details on the cuffs. The garment appears to be a statement piece with a bold, saturated color that creates a striking silhouette.",
+        "garment_type": "blazer",
+        "style": "contemporary tailored",
+        "material": null,
+        "color_palette": [
+          "yellow",
+          "mustard"
+        ],
+        "pattern": "solid",
+        "season": "spring/summer",
+        "occasion": "professional/casual chic",
+        "consumer_profile": "modern professional woman seeking statement pieces",
+        "trend_notes": "Bold color blocking trend, power dressing revival, structured shoulder emphasis",
+        "location_context": "retail boutique or clothing store with modern interior"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8387817.jpg",
+      "prediction": {
+        "description": "A vibrant yellow wool coat with structured tailoring, featuring notched lapels, button closures, and a belted waist. The coat appears to be a classic double-breasted or single-breasted design with clean lines and professional styling.",
+        "garment_type": "coat",
+        "style": "tailored",
+        "material": "wool",
+        "color_palette": [
+          "yellow",
+          "mustard"
+        ],
+        "pattern": "solid",
+        "season": "fall/winter",
+        "occasion": "professional/formal",
+        "consumer_profile": "professional woman",
+        "trend_notes": "Bold color statement piece, classic tailoring with modern twist",
+        "location_context": "retail boutique or clothing store"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8396299.jpg",
+      "prediction": {
+        "description": "A styling session featuring two contrasting silky garments - a navy blue oversized blazer worn over light wash denim shorts paired with white crew socks and sneakers, and a pink oversized shirt worn as a mini dress with yellow block heel sandals",
+        "garment_type": "blazer and shirt ensemble",
+        "style": "contemporary oversized",
+        "material": "silk or satin-like fabric",
+        "color_palette": [
+          "navy blue",
+          "pink",
+          "white",
+          "light blue",
+          "yellow"
+        ],
+        "pattern": "solid",
+        "season": "spring/summer",
+        "occasion": "casual styling or fashion consultation",
+        "consumer_profile": "young women interested in contemporary fashion and personal styling",
+        "trend_notes": "oversized silky pieces worn as statement garments, mixing formal and casual elements, color blocking",
+        "location_context": "fashion studio or styling room with clothing rack and modern furnishings"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-ron-lach-8396735.jpg",
+      "prediction": {
+        "description": "A relaxed-fit blazer in mint green and white gingham check pattern, worn casually over distressed light blue jeans with blue strappy sandals in a modern minimalist interior setting",
+        "garment_type": "blazer",
+        "style": "casual oversized",
+        "material": "cotton",
+        "color_palette": [
+          "mint green",
+          "white"
+        ],
+        "pattern": "gingham check",
+        "season": "spring/summer",
+        "occasion": "casual everyday",
+        "consumer_profile": "young contemporary woman seeking relaxed professional style",
+        "trend_notes": "oversized tailoring, gingham revival, casual blazer styling, relaxed workwear",
+        "location_context": "modern minimalist home interior with built-in storage and neutral decor"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-speakmediauganda-35165477.jpg",
+      "prediction": {
+        "description": "Casual yellow-green long-sleeve top with graphic print featuring text and imagery, worn with blue jeans in an outdoor park setting",
+        "garment_type": "long-sleeve graphic t-shirt",
+        "style": "casual",
+        "material": "cotton blend",
+        "color_palette": [
+          "yellow-green",
+          "olive",
+          "black"
+        ],
+        "pattern": "graphic print with text and imagery",
+        "season": "spring/fall",
+        "occasion": "casual/leisure",
+        "consumer_profile": "young adult seeking comfortable casual wear",
+        "trend_notes": "relaxed fit graphic tees with vintage-inspired prints and earth tone colors",
+        "location_context": "outdoor park or recreational area with wooden bench and trees"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "wrong",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-thirdman-8484042.jpg",
+      "prediction": {
+        "description": "A mustard yellow short-sleeve wrap dress or jumpsuit with a relaxed, utilitarian-inspired silhouette. The garment features a v-neckline and appears to be made from a structured cotton or linen blend fabric.",
+        "garment_type": "wrap dress",
+        "style": "casual contemporary",
+        "material": "cotton blend",
+        "color_palette": [
+          "mustard yellow",
+          "ochre"
+        ],
+        "pattern": "solid",
+        "season": "spring/summer",
+        "occasion": "casual daywear",
+        "consumer_profile": "modern minimalist woman seeking versatile wardrobe staples",
+        "trend_notes": "earthy tones and utilitarian-inspired silhouettes with wrap styling details",
+        "location_context": "clothing retail store or showroom with minimalist aesthetic"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    },
+    {
+      "filename": "pexels-thirdman-8485650.jpg",
+      "prediction": {
+        "description": "A curated clothing rack displaying a mix of professional and casual garments including blazers, dresses, and patterned bottoms in a neutral and warm color scheme, styled with coordinating accessories",
+        "garment_type": "mixed wardrobe collection",
+        "style": "contemporary professional casual",
+        "material": null,
+        "color_palette": [
+          "gray",
+          "black",
+          "mustard",
+          "olive",
+          "brown",
+          "white"
+        ],
+        "pattern": "mixed patterns including checks, stripes, and tie-dye",
+        "season": "transitional",
+        "occasion": "work to weekend versatile",
+        "consumer_profile": "modern professional woman seeking versatile wardrobe pieces",
+        "trend_notes": "Emphasis on earth tones and mustard yellow as accent color, mix-and-match separates approach",
+        "location_context": "minimalist styling setup or boutique display area"
+      },
+      "skipped": false,
+      "per_attribute": {
+        "garment_type": "correct",
+        "style": "skipped_no_label",
+        "material": "skipped_no_label",
+        "occasion": "skipped_no_label"
+      }
+    }
+  ]
+}
