@@ -4,7 +4,9 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
+from app.api.upload import router as upload_router
 from app.config import settings
 from app.database import init_db
 
@@ -16,6 +18,13 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+)
+
+app.include_router(upload_router)
+app.mount(
+    "/static",
+    StaticFiles(directory=str(settings.upload_dir.resolve())),
+    name="static",
 )
 
 
