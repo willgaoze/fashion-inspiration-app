@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from app.api.annotations import router as annotations_router
 from app.api.filters import router as filters_router
 from app.api.search import router as search_router
 from app.api.upload import router as upload_router
@@ -25,6 +26,7 @@ app.add_middleware(
 app.include_router(upload_router)
 app.include_router(filters_router)
 app.include_router(search_router)
+app.include_router(annotations_router)
 app.mount(
     "/static",
     StaticFiles(directory=str(settings.upload_dir.resolve())),
