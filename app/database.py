@@ -37,4 +37,6 @@ def get_db() -> Generator[Session, None, None]:
 
 def init_db() -> None:
     """Create all tables registered on ``Base.metadata`` if they do not exist."""
+    import app.models  # noqa: F401  — register ORM models with ``Base.metadata``
+
     Base.metadata.create_all(bind=engine)
